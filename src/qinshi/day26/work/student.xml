@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <linkman id="1"> 
+    <name>张三</name>  
+    <email>11111</email>  
+    <address>四川</address>  
+    <school>源码</school> 
+  </linkman>  
+  <linkman id="2"> 
+    <name>李四</name>  
+    <email>2322222@d.oc</email>  
+    <address>北京</address>  
+    <school>黑马</school> 
+  </linkman> 
+</root>

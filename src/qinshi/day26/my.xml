@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 第一行，必须有，且只能是这个：定义XML的版本和字符集 --><!--在浏览器显示正常，就说明没错，有错会显示错误信息--><qinshi> 
+  <group id="1"> 
+    <name id="11" cid="202101">篱琴</name>  
+    <sex>男</sex>  
+    <age>22</age>  
+    <special>大于符号：&gt;</special>  
+    <!--特殊符号需要转义 或者可以放到CDATA区 <![CDATA[这里写特殊符号]]>-->  
+    <s><![CDATA[>_<]]></s> 
+  </group>  
+  <group id="2"> 
+    <name id="22—1" cid="202102">婵梦</name>  <!-- 可以有多个属性 -->
+    <name id="22-2">貂蝉</name>
+    <sex>女</sex>  
+    <age>21</age>  
+    <special>小于符号：&lt;</special> 
+  </group>  
+  <group id="69"> 
+    <姓名 id="22" cid="202102">修改了标签里的内容</姓名>  
+    <sex>女</sex>  
+    <age>2</age>  
+    <special>小于符号：&lt;</special> 
+  </group>  
+  <group id="4"> 
+    <name>张三</name>
+    <sex>女</sex>  
+    <age>20</age> 
+  </group>
+</qinshi>
