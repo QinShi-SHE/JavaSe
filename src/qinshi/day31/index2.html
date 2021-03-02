@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格布局</title>
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+<body>
+    <form action="#" method="post">
+    <table border="" width="850px" height="600px">
+        <tr bgcolor="#f0f8ff"><td colspan="3"><h5>1.会员登录和密码</h5></td></tr>
+
+        <tr>
+            <td align="right">用户名：</td>
+            <td ><input type="text" ><span class="inputRight">*</span></td>
+            <td><button>检测用户名</button><span>5-15位，请使用英文(a-z,A-Z)、数字(0-9)</span></td>
+        </tr>
+        <tr>
+            <td align="right">密码：</td>
+            <td><input type="password" ><span class="inputRight">*</span></td>
+            <td>
+                <span>5-15位，请使用英文(a-z,A-Z)、数字(0-9)注意区分大小写；<br><span>密码不能与登录名相同；易记；难猜</span></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">再次输入密码：</td>
+            <td><input type="password"><span class="inputRight">*</span></td>
+            <td><span>两次输入的密码必须一致</span></td>
+
+        <tr bgcolor="#f0f8ff"><td colspan="3"><h5>2.姓名和联系方式</h5></td></tr>
+
+        <tr>
+            <td align="right">真实姓名：</td>
+            <td><input type="text"><span class="inputRight">*</span></td>
+            <td><input type="radio" name="sex" checked>先生 <input type="radio" name="sex">小姐</td>
+        </tr>
+        <tr>
+            <td align="right">电子邮箱：</td>
+            <td><input type="email"><span class="inputRight">*</span></td>
+            <td><font>非常重要!</font><br><span>这是客户与您联系的首先方式，请一定要填写真实。</span></td>
+        </tr>
+        <tr>
+            <td align="right">公司所在地：</td>
+            <td colspan="2">
+                <select name="" style="width: 100px">
+                    <option>北京</option>
+                </select>
+                <select name="" style="width: 60px">
+                    <option>东城</option>
+                    <option>西城</option>
+                    <option>北城</option>
+                    <option>男城</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">街道地址：</td>
+            <td colspan="2"><input type="text"><span class="inputRight">*</span><span>填写县（区）、街道、门牌号</span></td>
+        </tr>
+
+        <tr bgcolor="#f0f8ff"><td colspan="3"><h5>3.公司名称和主营业务</h5></td></tr>
+
+        <tr>
+            <td align="right">贵公司名称：</td>
+            <td><input type="text"><span class="inputRight">*</span></td>
+            <td><span>请填写在工商局注册的贵公司/商号全称；<br><span>无商号的个体经营者填写执照上的姓名，如：张三（个体营业）</span></span></td>
+        </tr>
+        <tr>
+            <td align="right">主营行业：</td>
+            <td>
+                <select name="" style="width: 110px">
+                    <option>电子工商</option>
+                    <option>戏剧传媒</option>
+                    <option>建筑工程</option>
+                    <option>楼兰一梦</option>
+                </select>
+            </td>
+            <td><span>请正确选择。您会收到该行业、该产品的供求信息</span></td>
+        </tr>
+        <tr>
+            <td align="right">公司网址：</td>
+            <td colspan="2"><input type="text" placeholder="http://"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input class="btn" type="button" type="submit" value="确认提交"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

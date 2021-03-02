@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<style type="text/css">
+		#footer{
+			width: 100px;
+			height: 200px;
+			float: top;
+			border: 1px solid #f8ec0b;
+			box-sizing:border-box;   /*让浏览器忽略border的宽度*/
+			margin-top: 1%;
+		}
+	</style>
+</head>
+<body>
+    <div class="con">
+		<!--
+       一般来说，定义表格之后需要指定宽高，使用border指定表格的边框：
+           1.	table：定义一个表格，简单的 HTML 表格由 table 元素以及一个或多个 tr、th 、td 组成；
+           2.	tr：定义表格中的行，表格行中包含一个或多个th或td元素；
+           3.	th：定义表头的单元格；
+           4.	td：定义普通的单元格；
+           5.	colspan：合并列/在列上面合并
+           6.	rowspan：合并行/在行上面合并
+  		 -->
+		<div class="top">
+		<table width="300" height="400" border="1px" align="center" class="table" bgcolor="aqua">
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr align="center">
+				<td>琴师</td>
+				<td>22</td>
+				<td>男</td>
+			</tr>
+			<tr align="center">
+				<td>香猫</td>
+				<td>22</td>
+                <td rowspan="2">女</td>
+			</tr>
+            <tr align="center">
+                <td colspan="2">篱琴</td>
+            </tr>
+		</table>
+
+		<div class="left">
+			<!--
+			   <img alt="" src="图片路径" width="" height="" />
+				   1.	alt属性：当图片无法显示的时候（路径错误）就会显示；
+				   2.	src属性：指定图片的路径；
+				   3.	width属性：指定图片的宽度；
+				   4.	height属性：指定图片的高度；
+
+				相对路径以文件本身为参照路径进行定位
+				./ 代表当前路径
+				../ 代表上一层路径
+				../../ 代表上一层的上一层路径
+		   -->
+			<img src="image/a.jpg" alt="当图片无法显示的时候（路径错误）就会显示" width="200" height="300">
+		</div>
+
+		<div class="center">
+			<!--
+				<a href="http://www.baidu.com" target="" >百度一下，你就知道</a>
+					1.	href属性：指示超链接需要链接的位置；
+					2.	target属性：指示该超链接以什么样的方式进行跳转：
+						(1)	_blank：在新的标签页打开；
+						(2)	_self：在当前标签页中打开，默认取值；
+			-->
+			<a href="http://www.baidu.com" target="" >百度一下，你就知道(当前页面打开)</a> <!--a标签是行内元素，没有换行功能，在CSS中把a标签转换为块级元素，就有换行的功能了-->
+			<a href="http://www.baidu.com" target="_blank" >百度一下，你就知道(新页面打开)</a>
+		</div>
+		</div>
+		<div class="form">
+			<!--
+				<form action="" method="">
+					表单元素
+				</form>
+				1.	form标签：用于定义表单；
+				2.	action属性：定义表单中的数据提交的位置；
+				3.	method属性：定义表单数据的提交方式：
+					(1)	get：通过url提交数据，有大小限制，不安全，提交的数据会在地址栏显示；不写默认是get提交
+					(2)	post：数据不会出现在地址栏上，无大小限制，安全；
+
+				<input  type="" name="" value="" />
+					type属性：决定input标签的展现效果
+						text：文本框（默认值，可以不写）
+						password：密码框
+						radio：单选框
+						checkbox：多选框/复选框
+						file：文件上传
+						hidden：隐藏域 ,页面看不到
+						submit：提交按钮
+						button：普通按钮
+						reset：重置按钮
+						image：图片按钮
+
+				value属性：标签包含的数据
+				对于不同的type类型，value属性的用法也不一致：
+				type="button"、"reset"、"submit"：value值定义按钮上的显示文本
+				type="text"、"password"、"hidden"：value值定义输入框的初始值
+				type="checkbox"、"radio"、"image"：value值定义与输入相关联的值
+
+				注意：
+				<input type="checkbox">和<input type="radio">中必须设置 value 属性
+				value属性无法与 <input type="file">一同使用
+
+				<select name="x">
+					<option value="提交的值">显示的值</option>
+				</select>
+				1.	option元素定义下拉列表中的一个选项，位于 select 元素内部；
+				2.	<option>标签可以在不带有任何属性的情况下使用，默认value是标记中的文本。但是您通常需要使用value属性，此属性会指定出被送往服务器的内容；
+				3.	请与select元素配合使用此标签，否则这个标签是没有意义的；
+				注意：<option> 与 <option/> 之间的值是浏览器显示在下拉列表中的内容，而 value 属性中的值是表单被提交时被发送到服务器的值。如果没有value属性，则将两个标签之间的值发送给服务器；
+			-->
+			<form action="" method="post">
+				<h5>&nbsp;用户名：</h5>
+					<input type="text" name="uname" value="李四"><br>
+				<h5>&nbsp;密码：</h5>
+					<input type="password" name="password"><br>
+				<h5>&nbsp;头像：</h5>
+					<input type="file">
+
+				<h5><br>&nbsp;隐藏域：</h5><br>
+					<input type="hidden">
+
+				<h5>&nbsp;性别：</h5>
+					<pre>     <input type="radio" name="sex" value="1">男  <input type="radio" name="sex" value="0">女</pre>
+
+				<h5>&nbsp;爱好：</h5>
+					<pre>    <font size="5">王者</font><input type="checkbox" name="like" value="1"><br></pre>
+					<pre>    <font size="5">光遇</font><input type="checkbox" name="like" value="2"><br></pre>
+					<pre>    <font size="5">吃鸡</font><input type="checkbox" name="like" value="3"><br></pre>
+
+				<span>自我介绍:</span>
+				<textarea name="" id="" cols="30" rows="10" placeholder="Please enter your message"></textarea><br><br>
+
+				省份：<select name="address">
+						<option value="0">--未选择--</option>
+						<option value="1">--四川--</option>
+						<option value="2">--湖北--</option>
+						<option value="3">--江苏--</option>
+					</select><br><br>
+
+				<input type="submit" style="color:red" value="提交"></input>
+				<input type="button" style="color:greenyellow" value="注册">
+				<input type="reset" value="重置">
+
+				<button type="button">登录</button>
+			</form>
+		</div>
+		<div id="footer">
+			琴师
+			<div>琴师</div> <!--块级元素标签自带上下换行-->
+			香猫
+			<span>香猫</span> <!--span行类元素，没有换行-->
+			<p>流沙</p> <!--块级元素标签自带上下换行-->
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+table{
+    margin: 5% auto;
+    border-collapse:collapse
+    /*
+        表格线常见问题：
+            1.表格边框与表格单元格线的重叠。[采用border-collapse:collapse解决]
+
+            2.嵌套表格与被嵌套表格边线重叠问题。[采用border-top|left|right|bottom解决]
+
+            3.嵌套表格与被嵌套表格对不齐的问题。[采用table-layout: fixed;解决]
+
+            4.border-collapse有两个属性，separate和 collapse 。
+
+            separate是默认属性，表格边框默认有1px 的间隙，在表格排版时代，设置好表格背景色，我们曾用它来挤出版块的外边框；
+            collapse，是将表格边框的间隙去掉，这样给表格的td边框赋值时就不会产生双线框了。
+    */
+}
+span{
+    color: aqua;
+    margin-left: 5px;
+}
+font{
+    color: red;
+    margin-left: 5px;
+}
+.btn{
+    background-color: #25ad05;
+    color: #ffff;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+input,select,button{
+    margin-left: 5px;
+}
+.inputRight{
+    color: red;
+   padding-top: 20px;
+}
+select{
+    height:20px;
+    line-height:20px
+}
